@@ -9,6 +9,6 @@
     {{ form.license_number|as_crispy_field }}
 
     <input type="submit" value="Submit" class="btn btn-primary">
-    <a href="{% url 'taxi:driver-detail' user.pk %}" class="btn btn-secondary">Cancel</a>
+    <a href="{% url 'taxi:driver-detail' object.pk %}" class="btn btn-secondary">Cancel</a>
   </form>
 {% endblock %}
